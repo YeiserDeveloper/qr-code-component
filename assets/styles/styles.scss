@@ -35,18 +35,19 @@ $widthDesktop: 1440px;
 * {
     body {
         font-family: 'Outfit', sans-serif;
-
+        background: $lightGray;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        flex-direction: column;
+        
         .main-content {
-            height: 100%;
-            width: 100%;
-            position: relative;
-            text-align: center;
+            background: $white;
+            border-radius: 15px;
             
             .content {
-                position: absolute;
-                top: 20px;
-                left: 36.5vw;
-                margin: 0px 0 0 0px;
                 text-align: center;
                 margin: 0 auto;
                 border-radius: 15px;
@@ -54,7 +55,7 @@ $widthDesktop: 1440px;
                 margin: 10px;
                 
                 .QrImg {
-                    height: 350px;
+                    height: 340px;
                     border-radius: 15px;
                 }
 
@@ -73,60 +74,13 @@ $widthDesktop: 1440px;
 
         .attribution {
             font-size: 11px;
-            text-align: right;
+            text-align: center;
+            color: $grayishBlue;
+            margin-top: 1em;
         }
 
         .attribution a {
             color: hsl(228, 45%, 44%);
-        }
-    }
-}
-
-@media (max-width: $widthMobile) {
-    .content {
-        position: relative;
-        
-        img {
-            position: absolute;
-            right: -180px;
-        }
-
-        article {
-            position: absolute;
-            display: flex;
-            top: 400px;
-            left: -60px;
-        }
-    }
-
-    .attribution {
-        position: relative;
-        right: 30px;
-        display: block;
-        padding: 0;
-        overflow: hidden;
-        text-align: center;
-    }
-
-}
-
-@media (orientation: landscape) {  
-    .main-content {
-        .content {
-            display: flex;
-            gap: 20px;
-            .QrImg {
-                position: absolute;
-                margin: 0;
-                padding: 0;
-                top: -10px;
-                left: 40px;
-            }
-            .text-center {
-                position: absolute;
-                top: 50px;
-                left: -250px;
-            }
         }
     }
 }

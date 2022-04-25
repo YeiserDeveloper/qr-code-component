@@ -18,20 +18,32 @@
 
 * body {
   font-family: 'Outfit', sans-serif;
+  background: #d6e2f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 * body .main-content {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  text-align: center;
+  background: white;
+  border-radius: 15px;
 }
 
 * body .main-content .content {
-  position: absolute;
-  top: 20px;
-  left: 36.5vw;
-  margin: 0px 0 0 0px;
   text-align: center;
   margin: 0 auto;
   border-radius: 15px;
@@ -40,7 +52,7 @@
 }
 
 * body .main-content .content .QrImg {
-  height: 350px;
+  height: 340px;
   border-radius: 15px;
 }
 
@@ -57,57 +69,12 @@
 
 * body .attribution {
   font-size: 11px;
-  text-align: right;
+  text-align: center;
+  color: #7b879d;
+  margin-top: 1em;
 }
 
 * body .attribution a {
   color: #3e52a3;
-}
-
-@media (max-width: 375px) {
-  .content {
-    position: relative;
-  }
-  .content img {
-    position: absolute;
-    right: -180px;
-  }
-  .content article {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 400px;
-    left: -60px;
-  }
-  .attribution {
-    position: relative;
-    right: 30px;
-    display: block;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
-  }
-}
-
-@media (orientation: landscape) {
-  .main-content .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-  }
-  .main-content .content .QrImg {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: -10px;
-    left: 40px;
-  }
-  .main-content .content .text-center {
-    position: absolute;
-    top: 50px;
-    left: -250px;
-  }
 }
 /*# sourceMappingURL=styles.css.map */
